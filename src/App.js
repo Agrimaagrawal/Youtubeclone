@@ -3,14 +3,14 @@ import Header from './components/Header.jsx';
 import Feed from './components/Feed';
 import SearchResult from './components/SearchResult';
 import VideoDetails from './components/VideoDetails';
-import {HashRouter,Routes,Route} from "react-router-dom";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 
 function App() {
   return (
     <>
       <Appcontext>
-      <HashRouter>
+      <BrowserRouter basename={window.location.pathname || ''}>
       <div className='flex flex-col h-full'>
         <Header/>
           <Routes>
@@ -20,7 +20,7 @@ function App() {
           </Routes>
         
       </div>
-      </HashRouter>
+      </BrowserRouter>
       
       </Appcontext>
       </>
