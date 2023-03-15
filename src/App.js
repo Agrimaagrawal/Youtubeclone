@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Appcontext>
-      <BrowserRouter basename={window.location.pathname || ''}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className='flex flex-col h-full'>
         <Header/>
           <Routes>
