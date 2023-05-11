@@ -10,9 +10,10 @@ function App() {
   return (
     <>
       <Appcontext>
+      
       <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className='flex flex-col h-full'>
-        <Header/>
+          <Header/>
           <Routes>
             <Route path='/' exact element={<Feed/>}></Route>
             <Route path='/searchResult/:searchQuery' element={<SearchResult/>}></Route>

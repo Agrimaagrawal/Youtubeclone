@@ -76,7 +76,9 @@ export default function Header() {
             <FiBell className='text-white text-xl cursor-pointer'/>
           </div>
           <div className='flex h-10 w-10 mt-1 rounded-full md:ml-4 '>
-          <VscAccount className='text-white text-2xl cursor-pointer'/>
+          <VscAccount className='text-white text-2xl cursor-pointer'onClick={()=>{
+          <Link to='/video/:id'></Link>
+          }}/>
           </div>
         </div>
 

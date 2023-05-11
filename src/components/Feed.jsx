@@ -1,13 +1,11 @@
-import React,{useContext,useEffect} from 'react'
+import React,{useContext} from 'react'
 import LeftNav from './LeftNav'
 import {Context} from '../context/Contextapi'
 import VideoCard from './VideoCard'
 
 const Feed = () => {
   const {loading ,searchResult}=useContext(Context);
- useEffect(()=>{
-    document.getElementById("root").classList.remove("custom-h");
- },[]);
+ 
 
   
   return (
